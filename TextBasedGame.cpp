@@ -197,7 +197,7 @@ void exploreLocation() {
             break;
         case 9:
             SetColor(RED);
-            std::cout << "Exploring the spooky graveyard, you uncover a cursed artifact. Beware its damage." << std::endl;    SetColor(DEFAULT);
+            std::cout << "Exploring the spooky graveyard, you uncover a cursed artifact. Beware its damage." << std::endl;
             SetColor(DEFAULT);
             dealDamage(2);
             break;
@@ -256,7 +256,9 @@ int main() {
             exploreLocation();
             break;
         case 2:
+            SetColor(GREEN);
             std::cout << "You take a rest and regain some health." << std::endl;
+            SetColor(DEFAULT);
             playerStrength++;
             break;
         case 3:
@@ -274,7 +276,9 @@ int main() {
 
         // End the game if player has found artifact
         if (clues >= 10) {
+            SetColor(YELLOW);
             std::cout << "Congratulations! You have found the legendary artifact!" << std::endl;
+            SetColor(DEFAULT);
             return 0;
         }
     }

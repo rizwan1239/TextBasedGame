@@ -1,0 +1,26 @@
+Welcome to the enchanting realm of text-based magical adventure game! Your quest is to find the legendary artifact hidden within this mystical world. To achieve this goal, you must go on a journey through mystical locations, where you'll discover valuable resources crucial to your quest.
+
+Exploration is at the heart of your adventure, and you will encounter various challenges and opportunities along the way. As you explore through different locations, you may find treasures, gain strength, or acquire clues that lead you closer to the legendary artifact. Be cautious, for lurking within the shadows are creatures eager to attack you.
+
+When faced with these mystical creatures, you'll need to make critical decisions. Assess your player's strength and choose wisely between confronting the creature in battle or fleeing. Defeating a creature rewards you with both strength and valuable clues, while a defeat may lead to a loss of strength.
+
+In your arsenal of actions, you also have the option to rest. Taking a moment to rejuvenate will replenish your health, preparing you for the challenges that lie ahead.
+
+To navigate through this magical world, your choices will be prompted with numerical options. For instance:
+
+Choose an action:
+1. Explore
+2. Rest
+3. Quit
+Enter your choice: 1
+
+When prompted to explore a specific location, respond with a "yes" or "no." For example:
+Enter your choice: 1
+You reach the top of a mountain. Enjoy the view? (yes/no): yes
+
+If encountered with a creature, respond with 1 for fight and 2 for flee. For example:
+You encounter a mysterious creature!
+Creature's Strength: 3
+Do you want to (1) Fight or (2) Flee? 1
+
+Collect clues is progress. Once you accumulate 10 or more clues, the legendary artifact will reveal itself, marking the end of your magical adventure.
