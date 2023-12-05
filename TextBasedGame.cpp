@@ -35,10 +35,10 @@ void SetColor(Color color) {
         std::cout << "\x1B[34m";  
         break;
     case GREEN:
-        std::cout << "\x1B[32m";  // Set color to green
+        std::cout << "\x1B[32m";  
         break;
     case PURPLE:
-        std::cout << "\x1B[35m";  // Set color to purple
+        std::cout << "\x1B[35m";
         break;
     case DEFAULT:
         std::cout << "\x1B[0m";   
@@ -148,43 +148,63 @@ void exploreLocation() {
         // Switch through locations based on choice
         switch (location) {
         case 1:
+            SetColor(YELLOW);
             std::cout << "Inside the cave, you discover a hidden treasure!" << std::endl;
+            SetColor(DEFAULT);
             treasure++;
             break;
         case 2:
+            SetColor(PURPLE);
             std::cout << "The magical forest enchants you. You gain magical powers!" << std::endl;
+            SetColor(DEFAULT);
             playerStrength++;
             break;
         case 3:
+            SetColor(GREEN);
             std::cout << "Approaching the shrine, you feel a mysterious energy. Something has changed." << std::endl;
+            SetColor(DEFAULT);
             playerStrength++;
             break;
         case 4:
+            SetColor(CYAN);
             std::cout << "Investigating the dark castle, you find clues about the legendary artifact." << std::endl;
+            SetColor(DEFAULT);
             clues++;
             break;
         case 5:
+            SetColor(CYAN);
             std::cout << "Inside the ancient ruin, you solve a puzzle and gain knowledge about the artifact." << std::endl;
+            SetColor(DEFAULT);
             clues++;
             break;
         case 6:
+            SetColor(GREEN);
             std::cout << "In the peaceful meadow, you encounter a friendly creature. It joins you on your journey." << std::endl;
+            SetColor(DEFAULT);
             playerStrength++;
             break;
         case 7:
+            SetColor(CYAN);
             std::cout << "Entering the vortex, you find yourself in a parallel dimension. Discover hidden truths." << std::endl;
+            SetColor(DEFAULT);
             clues++;
             break;
         case 8:
+            SetColor(YELLOW);
             std::cout << "The hidden village welcomes you. Trade with the villagers for valuable items." << std::endl;
+            SetColor(DEFAULT);
             treasure++;
             break;
         case 9:
-            std::cout << "Exploring the spooky graveyard, you uncover a cursed artifact. Beware its damage." << std::endl;
+            SetColor(RED);
+            std::cout << "Exploring the spooky graveyard, you uncover a cursed artifact. Beware its damage." << std::endl;    SetColor(DEFAULT);
+            SetColor(DEFAULT);
             dealDamage(2);
             break;
         case 10:
+            SetColor(CYAN);
             std::cout << "At the mountain top, you meditate and gain wisdom. Your mind is now sharper." << std::endl;
+            SetColor(DEFAULT);
             clues++;
             break;
         }
